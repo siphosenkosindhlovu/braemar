@@ -1,0 +1,62 @@
+{
+	"name": "braemar",
+	"version": "1.0.0",
+	"description": "Braemar Website",
+	"author": "Siphosenkosi Ndhlovu",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/Automattic/_s#readme",
+	"repository": "git+https://github.com/Automattic/_s.git",
+	"bugs": {
+		"url": "https://github.com/Automattic/_s/issues"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.3",
+		"@babel/preset-env": "^7.10.3",
+		"@babel/register": "^7.10.3",
+		"autoprefixer": "^9.8.2",
+		"babel-loader": "^8.1.0",
+		"browser-sync": "^2.26.7",
+		"del": "^5.1.0",
+		"dir-archiver": "^1.1.1",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-ejs": "^5.1.0",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-zip": "^5.0.1",
+		"node-sass": "^4.14.0",
+		"rtlcss": "^2.5.0",
+		"vinyl-named": "^1.1.0",
+		"webpack-stream": "^5.2.1"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"rtlcssConfig": {
+		"options": {
+			"autoRename": false,
+			"autoRenameStrict": false,
+			"blacklist": {},
+			"clean": true,
+			"greedy": false,
+			"processUrls": false,
+			"stringMap": []
+		},
+		"plugins": [],
+		"map": false
+	},
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build --prod",
+		"watch": "node-sass src/scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
+	},
+	"main": "index.js",
+	"dependencies": {
+		"@popperjs/core": "^2.9.1",
+		"bootstrap": "^5.0.0-beta3"
+	},
+	"private": true
+}

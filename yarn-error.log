@@ -1,0 +1,90 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\HP\bin;C:\Program Files\Python37\Scripts;C:\Program Files\Python37;C:\Python27;C:\Python27\Scripts;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Smart Projects\IsoBuster;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Program Files (x86)\Yarn\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\HP\.cargo\bin;C:\Program Files\PostgreSQL\12\lib;C:\Program Files\PostgreSQL\12\bin;C:\xampp\php;C:\Program Files\gs\gs9.26\bin;C:\Program Files\gs\gs9.26\lib;C:\xampp\mysql\bin;C:\Users\HP\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\HP\AppData\Local\Programs\Python\Python36-32;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Ruby24-x64\bin;C:\Program Files\JetBrains\PhpStorm 2018.3.3\bin;C:\Users\HP\AppData\Roaming\Composer\vendor\bin;C:\Program Files\heroku\bin;C:\Users\HP\.ebcli-virtual-env\executables;C:\Exercism;C:\Users\HP\AppData\Local\Yarn\bin;C:\Users\HP\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (internal/stream_base_commons.js:209:20)
+
+npm manifest: 
+  {
+  	"name": "braemar",
+  	"version": "1.0.0",
+  	"description": "Braemar Website",
+  	"author": "Siphosenkosi Ndhlovu",
+  	"license": "GPL-2.0-or-later",
+  	"keywords": [
+  		"WordPress",
+  		"Theme"
+  	],
+  	"homepage": "https://github.com/Automattic/_s#readme",
+  	"repository": "git+https://github.com/Automattic/_s.git",
+  	"bugs": {
+  		"url": "https://github.com/Automattic/_s/issues"
+  	},
+  	"devDependencies": {
+  		"@babel/core": "^7.10.3",
+  		"@babel/preset-env": "^7.10.3",
+  		"@babel/register": "^7.10.3",
+  		"autoprefixer": "^9.8.2",
+  		"babel-loader": "^8.1.0",
+  		"browser-sync": "^2.26.7",
+  		"del": "^5.1.0",
+  		"dir-archiver": "^1.1.1",
+  		"gulp": "^4.0.2",
+  		"gulp-clean-css": "^4.3.0",
+  		"gulp-if": "^3.0.0",
+  		"gulp-imagemin": "^7.1.0",
+  		"gulp-postcss": "^8.0.0",
+  		"gulp-replace": "^1.0.0",
+  		"gulp-sass": "^4.1.0",
+  		"gulp-sourcemaps": "^2.6.5",
+  		"gulp-zip": "^5.0.1",
+  		"node-sass": "^4.14.0",
+  		"rtlcss": "^2.5.0",
+  		"vinyl-named": "^1.1.0",
+  		"webpack-stream": "^5.2.1"
+  	},
+  	"prettier": "@wordpress/prettier-config",
+  	"rtlcssConfig": {
+  		"options": {
+  			"autoRename": false,
+  			"autoRenameStrict": false,
+  			"blacklist": {},
+  			"clean": true,
+  			"greedy": false,
+  			"processUrls": false,
+  			"stringMap": []
+  		},
+  		"plugins": [],
+  		"map": false
+  	},
+  	"scripts": {
+  		"start": "gulp",
+  		"build": "gulp build --prod",
+  		"watch": "node-sass src/scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
+  	},
+  	"main": "index.js",
+  	"dependencies": {
+  		"@popperjs/core": "^2.9.1",
+  		"bootstrap": "^5.0.0-beta3"
+  	},
+  	"private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
