@@ -92,7 +92,9 @@ export const pages = () => {
 
 export const images = () => {
 	return src( 'src/images/**/*.{jpg,jpeg,png,svg,gif}' )
-		.pipe( gulpif( PRODUCTION, imagemin() ) )
+		.pipe( gulpif( PRODUCTION, imagemin({
+			verbose: true,
+		}) ) )
 		.pipe( dest( 'dist/images' ) );
 };
 
@@ -135,7 +137,7 @@ export const compress = () => {
 				replace( '_themename', info.name )
 			)
 		)
-		.pipe( zip( `${ info.name-Date.now() }.zip` ) )
+		.pipe( zip( `${ info.name}+${Date.now() }.zip` ) )
 		.pipe( dest( 'bundled' ) );
 };
 
