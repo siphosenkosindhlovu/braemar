@@ -80,7 +80,7 @@ export const scripts = () => {
 };
 
 export const pages = () => {
-  return src(['src/ejs/*.ejs'])
+  return src(['src/*.ejs'])
     .pipe(ejs())
     .pipe(
       rename({
@@ -140,7 +140,7 @@ export const compress = () => {
 };
 
 export const watchForChanges = () => {
-	watch( 'src/ejs/**/*.ejs', pages ).on('change', server.reload);
+	watch( 'src/**/*.ejs', pages ).on('change', server.reload);
 	watch( 'src/scss/**/*.scss', styles );
 	watch( 'src/images/**/*.{jpg,jpeg,png,svg,gif}', series( images, reload ) );
 	watch(

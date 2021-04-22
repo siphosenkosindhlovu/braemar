@@ -2,64 +2,41 @@
 @import "../../node_modules/bootstrap/scss/variables"; // Required
 @import "../../node_modules/bootstrap/scss/mixins"; // Required
 //colours
-$blue-light-1: #abc5ff;
-$blue-light-2: #5786ed;
-$blue: #2950af;
-$blue-dark: #11358b;
-$navy: #08243b;
-$orange: #ff5833;
-$light: #f8f8fa;
-$gray: #606060;
-$body-color: $gray;
+$green: #334341;
+$green-dark: #0d1d1b;
+$green-vibrant: #38f561;
+$green-faded: #ebf5f1;
+$blue: #4460f5;
+
+$body-color: rgba(235, 245, 241, 0.8);
 
 $primary: $blue;
 
 $custom-colors: (
-  "blue-light-1": $blue-light-1,
-  "blue-light-2": $blue-light-2,
-  "blue-dark": $blue-dark,
+  "light-1": $green-faded,
+  "light": #d3dbd8,
+  "dark": $green-dark,
+  "dark-1": $green,
   "accent": $orange,
   "primary": $blue,
-  "navy": $navy,
+  "blue": $blue,
+  "black": #000,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$min-contrast-ratio:  3;
-
-$spacers: (
-  0: 0,
-  "0_5": $spacer * 0.25,
-  1: $spacer * 0.5,
-  "1_5": $spacer * 0.75,
-  2: $spacer * 0.875,
-  3: $spacer,
-  4: $spacer * 1.25,
-  5: $spacer * 1.5,
-  6: $spacer * 2,
-  7: $spacer * 2.25,
-  8: $spacer * 2.5,
-  9: $spacer * 2.75,
-  10: $spacer * 3,
-  13: $spacer * 3.75,
-  14: $spacer * 4,
-  17: $spacer * 4.75,
-  18: $spacer * 5,
-  22: $spacer * 6,
-  26: $spacer * 7,
-  29: $spacer * 7.75,
-  30: $spacer * 8,
-);
+$min-contrast-ratio: 3;
 
 //typography
-$font-family-sans-serif: "GT Walsheim Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+$font-family-sans-serif: "SF UI Text", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
   "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
   "Noto Color Emoji";
-$font-family-heading: "Gilroy-Extrabold", sans-serif;
+$font-family-heading: "Nocturne Serif", serif;
 $font-size-base: 1rem;
+$font-family-base: "Nocturne Serif", serif;
 
-$h1-font-size: 4rem;
-$h2-font-size: 3rem;
+$h1-font-size: 3.125rem;
+$h2-font-size: 3.125rem;
 $h3-font-size: 2rem;
 $h4-font-size: 1.5rem;
 $h5-font-size: 1.3125rem;
@@ -72,80 +49,35 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
-  tiny: 0.5rem,
-  xxs: 0.6875rem,
-  xs: 0.75rem,
   sm: 0.875rem,
-  md: 1.125rem,
-  2md: 1.5rem,
-  lg: 2.2625rem,
-  xl: 3.5rem,
+  md: 1.25rem,
+  2md: 1.5625rem,
+  lg: 1.875rem,
+  xl: 3.125rem,
 );
 
-$headings-font-family: 'Gilroy-Extrabold', sans-serif;
-$headings-font-weight: normal;
-$headings-color: $blue;
-$headings-margin-bottom: 1.75rem;
+$headings-font-family: "Nocturne Serif", serif;
+$headings-font-weight: 500;
 
-$line-height-base: 1.6875;
+$grid-columns: 10;
+$grid-gutter-width: 0.75rem;
 
-$nav-link-font-size: map-get(
-  $map: $font-sizes,
-  $key: sm,
-);
-$nav-link-padding-y: 1.28125rem;
-$nav-link-padding-x: 1.25rem;
-$navbar-nav-link-padding-x: 1.25rem;
-$nav-link-color: $body-color;
-$nav-link-hover-color: $orange;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 990px,
+  xxl: 1140px,
+) ;
 
-$dropdown-link-hover-bg: rgba(96, 96, 96, 0.05);
-$enable-shadows: true;
+$card-spacer-y:                     1.55rem;
+$card-spacer-x:                     1.55rem;
+$card-border-width:                 0;
+$card-border-radius:                0;
 
-$border-radius-sm: 0.3125rem;
-$border-radius: 1.25rem;
-$border-radius-lg: 1.875rem;
-
-$btn-border-radius: 999px;
-$btn-padding-y: 0.675rem;
-$btn-padding-x: 1.5rem;
-
-$accordion-border-color: transparent;
-$accordion-button-padding-x: 0;
-$accordion-button-color: $blue;
-$accordion-button-bg: transparent;
-$accordion-button-active-bg: transparent;
-$accordion-button-active-color: $orange;
-$accordion-icon-width:  0.75rem;
-$accordion-button-icon:         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><line x1="0" y1="6" x2="12" y2="6" stroke="#{$accordion-button-color}" stroke-width="3" stroke-linecap="round"></line><line x1="6" y1="0" x2="6" y2="12" stroke="#{$accordion-button-color}" stroke-linecap="round" stroke-width="3"></line></svg>');
-$accordion-button-active-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><line x1="0" y1="6" x2="12" y2="6" stroke="#{$accordion-button-active-color}" stroke-width="3" stroke-linecap="round"></line></svg>');
-
-$card-border-radius: 1.25rem;
-$card-border-color: transparent;
-$card-border-width: 0;
-$card-spacer-y: 1.5rem;
-$card-spacer-x: 1.875rem;
-
-$grid-breakpoints: map-merge(
-  $grid-breakpoints,
-  (
-    xl: 1280px
-  )
-);
-
-$container-max-widths: map-merge(
-  $container-max-widths,
-  (
-    xl: 1248px
-  )
-);
-
-$modal-content-border-color:  transparent;
-$modal-content-border-radius:   $border-radius-lg;
-$modal-backdrop-opacity: 1;
-$modal-inner-padding: 3.75rem;
-$modal-header-padding-x: 3.75rem;
-$modal-header-padding-y: 3.75rem;
+$btn-border-radius: 0;
+$input-border-radius:   0;
+$input-placeholder-color: rgba(13, 29, 27, 0.6);
 @import "../../node_modules/bootstrap/scss/utilities";
 
 $utilities: map-merge(
@@ -173,13 +105,13 @@ $utilities: map-merge(
           values: map-get(map-get($utilities, "position"), "values"),
         )
       ),
-      "z-index": (
-        property: "z-index",
-        values : (
-          negative: -1,
-          auto: auto,
-        )
-      )
+    "z-index": (
+      property: "z-index",
+      values: (
+        negative: -1,
+        auto: auto,
+      ),
+    ),
   )
 );
 

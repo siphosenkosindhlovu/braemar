@@ -1,2 +1,105 @@
 @import "./custom.scss";
 @import "./fonts.scss";
+
+.text-heading {
+  font-size: 1.875rem;
+  margin-bottom: 1em;
+}
+
+.text-navbar{
+  font-size: 2.1875rem;
+  @include media-breakpoint-up(lg){
+    font-size: 0.833rem;
+  }
+}
+
+@include media-breakpoint-up(xxl){
+  html {
+    font-size: 1.875rem
+  }
+  .text-heading {
+    font-size: 1.67rem;
+  }
+}
+
+.page-section {
+  padding: {
+    top: 3.75rem;
+    bottom: 5rem
+  }
+  @include media-breakpoint-up(xxl){
+    padding: {
+      top: 3.33rem;
+      bottom: 5rem
+    }
+  }
+  &-inner {
+    margin: {
+      top: 3.75rem;
+      bottom: 5rem
+    }
+    @include media-breakpoint-up(xxl){
+      margin: {
+        top: 3.33rem;
+        bottom: 5rem
+      }
+    }
+  }
+}
+
+.ff-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+input, textarea {
+  font-family: $font-family-sans-serif;
+  font-weight: bold;
+  &::placeholder {
+    font-weight: bold;
+  }
+  &[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-family: $font-family-sans-serif;
+    color: $input-placeholder-color;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+.page-section-architecture {
+  position: relative;
+  padding-left: 61px !important;
+  &:before {
+    content:  "";
+    width: 10%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #38F561;
+    left: 0;
+  }
+  
+  @include media-breakpoint-up(lg){
+    padding-left: $grid-gutter-width;
+    &:before {
+      left: $grid-gutter-width
+    }
+  }
+
+}
+
+.container {
+  padding: {
+    left: 36px;
+    right: 36px;
+  }
+
+  @include media-breakpoint-up(lg){
+    padding: {
+      left: $grid-gutter-width;
+      right: $grid-gutter-width;
+    }
+  }
+}
