@@ -1,21 +1,31 @@
 @import "./custom.scss";
 @import "./fonts.scss";
-
+html {
+  font-size: 16px
+}
 .text-heading {
-  font-size: 1.875rem;
+  font-size: 30px;
   margin-bottom: 1em;
 }
 
-.text-navbar{
+.text-navbar {
   font-size: 2.1875rem;
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     font-size: 0.833rem;
   }
 }
 
-@include media-breakpoint-up(xxl){
+@include media-breakpoint-up(xxxl) {
   html {
-    font-size: 1.875rem
+    font-size: 30px;
+  }
+  .text-heading {
+    font-size: 50px;
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  html {
+    font-size: 1.875rem;
   }
   .text-heading {
     font-size: 1.67rem;
@@ -25,23 +35,20 @@
 .page-section {
   padding: {
     top: 3.75rem;
-    bottom: 5rem
+    bottom: map-get($spacers, 20);
   }
-  @include media-breakpoint-up(xxl){
+  @include media-breakpoint-up(xxxl) {
     padding: {
       top: 3.33rem;
-      bottom: 5rem
     }
   }
   &-inner {
     margin: {
-      top: 3.75rem;
-      bottom: 5rem
+      bottom: map-get($spacers, 20);
     }
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(xxxl) {
       margin: {
-        top: 3.33rem;
-        bottom: 5rem
+        bottom: map-get($spacers, 20);
       }
     }
   }
@@ -51,13 +58,14 @@
   font-family: $font-family-sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: $font-family-sans-serif;
   font-weight: bold;
   &::placeholder {
     font-weight: bold;
   }
-  &[type="submit"]{
+  &[type="submit"] {
     background-color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
     font-family: $font-family-sans-serif;
@@ -72,22 +80,21 @@ input, textarea {
   position: relative;
   padding-left: 61px !important;
   &:before {
-    content:  "";
+    content: "";
     width: 10%;
     height: 100%;
     display: block;
     position: absolute;
-    background: #38F561;
+    background: #38f561;
     left: 0;
   }
-  
-  @include media-breakpoint-up(lg){
+
+  @include media-breakpoint-up(lg) {
     padding-left: $grid-gutter-width;
     &:before {
-      left: $grid-gutter-width
+      left: $grid-gutter-width;
     }
   }
-
 }
 
 .container {
@@ -96,10 +103,64 @@ input, textarea {
     right: 36px;
   }
 
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     padding: {
-      left: $grid-gutter-width;
-      right: $grid-gutter-width;
+      left: 0;
+      right: 0;
     }
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.lion {
+  &-head {
+    position: relative;
+    &::before, &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 80px;
+    }
+    &::before {
+      content: "B";
+      right: calc(100% + 25px);
+    }
+    &::after {
+      content: "R";
+      left: calc(100% + 25px)
+    }
+  }
+
+  &-cover {
+    border-bottom: 20px solid $green-vibrant;
+    bottom: -10px;
+    width: 100%;
+  }
+}
+
+
+footer {
+  a.nav-link {
+    color: white;
+    padding-left: 0;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.media {
+  @include make-row();
+  &-thumb {
+    @include make-col-ready();
+    @include make-col(3, $columns: 12);
+  }
+  &-body {
+    @include make-col-ready();
+    @include make-col(9, $columns: 12);
   }
 }

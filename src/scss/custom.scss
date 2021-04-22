@@ -49,6 +49,7 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
+  xs: 0.533rem,
   sm: 0.875rem,
   md: 1.25rem,
   2md: 1.5625rem,
@@ -62,16 +63,46 @@ $headings-font-weight: 500;
 $grid-columns: 10;
 $grid-gutter-width: 0.75rem;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1640px,
+);
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 990px,
   xxl: 1140px,
+  xxxl: 1466px,
 ) ;
 
-$card-spacer-y:                     1.55rem;
-$card-spacer-x:                     1.55rem;
+$spacer: 15px;
+$spacers: (
+  0: 0px,
+  1: 5px,
+  2: 10px,
+  3: 15px,
+  4: 20px,
+  5: 25px,
+  6: 30px,
+  7: 35px,
+  8: 40px,
+  10: 50px,
+  12: 60px,
+  20: 100px,
+  30: 150px,
+);
+
+$line-height-base:            1.2;
+
+$card-spacer-y:                     2rem;
+$card-spacer-x:                     1.67rem;
 $card-border-width:                 0;
 $card-border-radius:                0;
 

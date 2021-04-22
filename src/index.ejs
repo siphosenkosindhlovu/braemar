@@ -11,7 +11,6 @@
 
 <body>
   <header>
-
     <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark-1">
       <a class="navbar-brand" href="#"><img src="images/braemar-logo.svg" class="img-fluid" alt="" srcset=""></a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -44,14 +43,13 @@
         </ul>
       </div>
     </nav>
-
   </header>
-  <section class="bg-dark text-light vh-100 page-section d-flex align-items-center">
+  <section class="bg-dark text-light min-vh-100 page-section d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <h1 class="text-heading">
-            We are Braemar
+          <h1 class="text-heading fw-light">
+            We are <span class="fw-bold">Braemar</span>
           </h1>
           <p>
             Braemar is one of the world’s leading innovative service company providing financial institutions with the
@@ -60,7 +58,18 @@
             and businesses transact and interact with payments.
           </p>
         </div>
-        <div class="col-lg-6"></div>
+        <div class="col-lg-3 offset-lg-2">
+          <div class="position-relative lion w-75 w-lg-100 m-auto">
+            <div class="lion-head">
+              <img src="images/Lion.png" alt="" class="img-fluid">
+            </div>
+            <div class="position-absolute rotate-180 lion-cover">
+              <div id="layaan" class="collapse show">
+                <img src="images/Группа масок 3@2x.png" class="img-fluid rotate-180" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -103,12 +112,21 @@
   </section>
   <section class="text-dark page-section">
     <div class="container">
-      <h2 class="text-heading">
-        Braemar solution is certified to work with the following processing hosts
+      <h2 class="text-heading fw-light">
+       <span class="fw-bold">Braemar solution</span> is certified to work with the following processing hosts
       </h2>
       <div class="row page-section-inner">
-        <div class="col-lg-4">
-
+        <div class="col-md-5 col-lg-4">
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 7.svg" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold h-100">
+              <div class="">
+                POSLine ISO8583 Interface
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 offset-lg-1"></div>
       </div>
@@ -116,18 +134,30 @@
         Key functionality
       </h2>
       <div class="row page-section-inner">
-        <div class="col-lg-4">
+        <div class="col-md-5 col-lg-4">
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/sliders-1.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold h-100">
+              <div class="">
+                Centralized management of the device fleet
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="col-lg-4 offset-lg-1"></div>
+        <div class="col-md-4 col-lg-4 offset-lg-1"></div>
       </div>
     </div>
   </section>
   <section class="bg-dark page-section">
-    <div class="container">
+    <div class="container page-section-inner">
       <div class="row g-0">
-        <div class="col-lg-6 bg-black card ">
-          <div class="card-body ff-sans-serif fw-bold w-lg-75">
+        <div class="col-lg-6 bg-black card">
+          <div class="card-body w-lg-75">
 
             <h2 class="text-heading">
               Infrastructure as a Service (IaaS)
@@ -144,7 +174,7 @@
           </div>
         </div>
         <div class="col-lg-4 order-lg-2">
-          <img src="images/Server-View 1@2x.png" alt="" class="img-fluid">
+          <img src="images/Server-View 1@2x.png" alt="" class="img-fluid h-100 w-100 object-fit-cover">
         </div>
       </div>
     </div>
@@ -208,19 +238,68 @@
         Hardware
       </h2>
       <div class="hardware">
-        <div class="hardware-item">
-          <div class="hardware-desc">
-            <h2 class="text-heading">
-              HSM
-            </h2>
-            <p>
-              Hardware security modules (HSMs) provide encryption processing and protection for the keys and
-              applications that underlie your critical security processes. Thales HSMs are easy to integrate with your
-              systems and applications. They are also flexible and scalable. That means they can meet your evolving
-              encryption and compliance needs.
-            </p>
+        <div class="hardware-item row g-0 g-md-3 mb-5">
+          <div class="col-md-5">
+            <div class="hardware-desc card bg-dark h-100">
+              <div class="card-body">
+                <h3 class="text-heading">
+                  HSM
+                </h3>
+                <p>
+                  Hardware security modules (HSMs) provide encryption processing and protection for the keys and
+                  applications that underlie your critical security processes. Thales HSMs are easy to integrate with
+                  your
+                  systems and applications. They are also flexible and scalable. That means they can meet your evolving
+                  encryption and compliance needs.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="hardware-img"></div>
+          <div class="col-md-5">
+            <div class="hardware-img bg-dark d-flex align-items-end h-100">
+              <img src="images/Shield-View 1@2x.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="hardware-item row g-0 g-md-3 mb-5 flex-md-row-reverse">
+          <div class="col-md-5">
+            <div class="hardware-desc card bg-dark h-100">
+              <div class="card-body">
+                <h3 class="text-heading">
+                  Smart POS<br> Terminals
+                </h3>
+                <p>
+                  Smart POS terminals allow you to process payments on the spot, only printing receipts when needed, and
+                  best of all, access to all the useful apps you need to help you accelerate your business.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="hardware-img bg-dark d-flex align-items-end h-100">
+              <img src="images/Untitled-View 3@2x.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="hardware-item row g-0 g-md-3 mb-5">
+          <div class="col-md-5">
+            <div class="hardware-desc card bg-dark h-100">
+              <div class="card-body">
+                <h3 class="text-heading">
+                  Credit Card Machines
+                </h3>
+                <p>
+                  A wide range of payment card machines including countertop, mobile, and portable solutions. Launched
+                  on Linux or traditional operational systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="hardware-img bg-dark d-flex align-items-end h-100">
+              <img src="images/Untitled-View 1@2x.png" alt="" class="img-fluid">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -265,53 +344,45 @@
     <h2 class="text-heading offset-lg-1">
       About Us
     </h2>
-    <div class="row">
-      <div class="col-lg-4 offset-lg-1">
+    <div class="row g-0">
+      <div class="col-lg-3 offset-lg-1">
         <p>
           Braemar was founded in 2018. Today, the main activity of Braemar is the development of software for managing
           the fleet of POS terminals and routing transactions.
-
-
         </p>
         <p>
           Braemar is an expert in the field of acquiring and
           payments. The company, which is an acquiring expert, operates as Terminal Service Provider (ТSP) in the EU,
           provides outsourcing services for acquiring networks in different countries, as well as consulting for
           organisations engaged in acquiring activities.
-
         </p>
         <p>
-
           Within the TSP activities in the EU, Braemar annually passes
           compliance requirements of the PCI DSS Level 1 international standards, as well as the Visa PIN Security
           certification.
         </p>
       </div>
-      <div class="col-lg-4 offset-lg-1 card bg-primary">
-        <div class="card-body">
-          <p>
-            Sale of POS terminal equipment
-          </p>
-          <p>
-
-            Technical and business consultations for companies engaged in acquiring
-            activities
-
-          </p>
-          <p>
-
-            Development, implementation, and support of software for POS terminals
-
-          </p>
-          <p>
-
-            Acquiring network
-            outsourcing
-          </p>
-          <p>
-            Development of solutions for alternative transactional systems
-          </p>
-
+      <div class="col-lg-4 offset-lg-1">
+        <div class="card bg-primary text-white">
+          <div class="card-body ff-sans-serif fw-bold">
+            <p>
+              Sale of POS terminal equipment
+            </p>
+            <p>
+              Technical and business consultations for companies engaged in acquiring
+              activities
+            </p>
+            <p>
+              Development, implementation, and support of software for POS terminals
+            </p>
+            <p>
+              Acquiring network
+              outsourcing
+            </p>
+            <p>
+              Development of solutions for alternative transactional systems
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -351,6 +422,49 @@
       </div>
     </div>
   </section>
+  <footer class="bg-dark-1 page-section">
+    <div class="container">
+      <div class="page-section-inner mb-4">
+        <a href="#">
+          <img src="images/braemar-logo.svg" class="img-fluid" alt="" srcset="">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row row-cols-md-2">
+            <div>
+
+              <div class="nav flex-column">
+                <a href="" class="nav-link">Solution</a>
+                <a href="" class="nav-link">IaaS</a>
+                <a href="" class="nav-link">On Premise</a>
+                <a href="" class="nav-link">Hardware</a>
+              </div>
+            </div>
+            <div>
+              <div class="nav flex-column">
+
+                <a href="" class="nav-link">Consulting</a>
+                <a href="" class="nav-link">About Us</a>
+                <a href="" class="nav-link">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-3 ms-auto d-flex">
+          <div class="fs-xs text-end py-4">
+            Braemar OÜ<br> Reg. No 14709357 <br>
+            <br>
+            Registered address: <br>
+            67/1-13B Tartu maantee<br> Kesklinna linnaosa<br> 10115 Tallinn
+            Estonia
+          </div>
+          <img src="images/Сгруппировать 30.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>
