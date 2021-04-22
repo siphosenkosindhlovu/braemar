@@ -51,6 +51,7 @@
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build --prod",
+		"bundle": "gulp pack --prod",
 		"watch": "node-sass src/scss/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w"
 	},
 	"main": "index.js",

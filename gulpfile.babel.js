@@ -135,7 +135,7 @@ export const compress = () => {
 				replace( '_themename', info.name )
 			)
 		)
-		.pipe( zip( `${ info.name }.zip` ) )
+		.pipe( zip( `${ info.name-Date.now() }.zip` ) )
 		.pipe( dest( 'bundled' ) );
 };
 

@@ -10,44 +10,46 @@
 </head>
 
 <body>
-  <header>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark-1">
-      <a class="navbar-brand" href="#"><img src="images/braemar-logo.svg" class="img-fluid" alt="" srcset=""></a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="page-top z-index position-fixed w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark m-auto container py-4 px-md-8" style="max-width: 1700px;">
+      <a class="navbar-brand" style="z-index: 1000" href="#"><img src="images/braemar-logo.svg" class="img-fluid" alt=""
+          srcset=""></a>
+      <button style="z-index: 1000" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-navbar justify-content-lg-end" id="collapsibleNavId">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Solution</a>
+            <a class="nav-link" href="#solution">Solution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">IaaS</a>
+            <a class="nav-link" href="#iaas">IaaS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">On-Premise</a>
+            <a class="nav-link" href="#on-premise">On-Premise</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hardware</a>
+            <a class="nav-link" href="#hardware">Hardware</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Consulting</a>
+            <a class="nav-link" href="#consulting">Consulting</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <section class="bg-dark text-light min-vh-100 page-section d-flex align-items-center">
+  <section id="hero" class="bg-dark text-light min-vh-100 page-section d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-5 text-center text-md-start">
           <h1 class="text-heading fw-light">
             We are <span class="fw-bold">Braemar</span>
           </h1>
@@ -72,11 +74,14 @@
         </div>
       </div>
     </div>
+    <a href="#solution" class="handle">
+      <span class="visually-hidden">Solution</span>
+    </a>
   </section>
-  <section class="bg-dark-1 text-light page-section">
+  <section id="solution" class="bg-dark-1 text-light page-section pb-16">
     <div class="container">
-      <div class="row page-section-inner mt-0">
-        <div class="col-lg-4 offset-lg-1 order-lg-2">
+      <div class="row page-section-inner mb-10">
+        <div class="col-lg-4 offset-lg-1 order-lg-2 mb-10 mb-lg-0">
           <h2 class="text-heading">
             Solution
           </h2>
@@ -91,8 +96,8 @@
           <img src="images/Card-View 1@2x.png" alt="" class="img-fluid">
         </div>
       </div>
-      <div class="row page-section-inner">
-        <div class="col-lg-4">
+      <div class="row page-section-inner mb-0">
+        <div class="col-lg-4 mb-10">
           <p>
             The Braemar solution provides transaction routing services, payment terminal network management, advanced
             real-time device monitoring, remote software updating, and data exchange to and from the acquiring system of
@@ -112,28 +117,96 @@
   </section>
   <section class="text-dark page-section">
     <div class="container">
-      <h2 class="text-heading fw-light">
-       <span class="fw-bold">Braemar solution</span> is certified to work with the following processing hosts
-      </h2>
-      <div class="row page-section-inner">
+      <div class="row">
+
+        <h2 class="text-heading fw-light col-lg-4 text-center text-md-start">
+          <span class="fw-bold">Braemar solution</span> is certified to work with the following processing hosts
+        </h2>
+      </div>
+      <div class="row page-section-inner certifications">
         <div class="col-md-5 col-lg-4">
           <div class="media">
             <div class="media-thumb">
               <img src="images/Сгруппировать 7.svg" alt="" class="img-fluid">
             </div>
-            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold h-100">
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
               <div class="">
                 POSLine ISO8583 Interface
               </div>
             </div>
           </div>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 6.svg" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                Transmaster Interface Specification for POS Terminals on ISO8583:1993 (E)
+                <br>
+                Hypercom POS to Tieto HPT Host interface (Card Suite)
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 8.svg" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                ISO 8583, OpenWay POS dialect (Way4 Host)
+                <br>
+                ISO 8583, OpenWay POS dialect (for Transaction switch)
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 offset-lg-1"></div>
+        <div class="col-md-5 col-lg-4 offset-lg-1">
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 5.svg" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                TranzWare ISO8583 Terminal Protocol
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 4.png" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                SmartVista front end ISO8583 POS Trickle Feed
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 9.png" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                PKK Payment System
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb">
+              <img src="images/Сгруппировать 10.png" alt="" class="img-fluid">
+            </div>
+            <div class="media-body bg-light px-5 py-4 ff-sans-serif fw-bold">
+              <div class="">
+                PKK Payment System
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <h2 class="text-heading text-center">
         Key functionality
       </h2>
-      <div class="row page-section-inner">
+      <div class="row page-section-inner mb-0 functionality">
         <div class="col-md-5 col-lg-4">
           <div class="media">
             <div class="media-thumb px-5">
@@ -141,19 +214,129 @@
                 <img src="images/sliders-1.svg" alt="" class="img-fluid">
               </div>
             </div>
-            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold h-100">
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
               <div class="">
                 Centralized management of the device fleet
               </div>
             </div>
           </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/lock.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Automated management of encryption keys
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/tv.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Integrated monitoring in real-time
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/calculator-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Multi-banking feature support
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/phone.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Decentralization of EFTPOS terminals distribution
+
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="col-md-4 col-lg-4 offset-lg-1"></div>
+        <div class="col-md-5 col-lg-4 offset-lg-1">
+
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div>
+                <img src="images/bag-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Multi-merchant function support</div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div><img src="images/money-2.svg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Transactions flow recognition
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div><img src="images/file-text.svg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Analytical reporting
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div><img src="images/chat-31.svg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Multi-hosting support
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-thumb px-5">
+              <div><img src="images/settings.svg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+            <div class="media-body bg-light p-3 px-lg-5 py-lg-4 ff-sans-serif fw-bold">
+              <div class="">
+                Work with equipment from different manufacturers
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="bg-dark page-section">
+  <section id="iaas" class="bg-dark page-section">
     <div class="container page-section-inner">
       <div class="row g-0">
         <div class="col-lg-6 bg-black card">
@@ -211,7 +394,7 @@
   <section>
     <img src="images/Сгруппировать 11@3x.png" alt="" class="img-fluid">
   </section>
-  <section class="page-section bg-black text-light">
+  <section id="on-premise" class="page-section bg-black text-light">
     <div class="container">
       <h2 class="text-heading offset-lg-1">
         On-Premise
@@ -232,72 +415,76 @@
       </div>
     </div>
   </section>
-  <section class="page-section bg-dark-1">
+  <section id="hardware" class="page-section bg-dark-1">
     <div class="container text-light">
       <h2 class="text-heading text-center">
         Hardware
       </h2>
-      <div class="hardware">
-        <div class="hardware-item row g-0 g-md-3 mb-5">
-          <div class="col-md-5">
-            <div class="hardware-desc card bg-dark h-100">
-              <div class="card-body">
-                <h3 class="text-heading">
-                  HSM
-                </h3>
-                <p>
-                  Hardware security modules (HSMs) provide encryption processing and protection for the keys and
-                  applications that underlie your critical security processes. Thales HSMs are easy to integrate with
-                  your
-                  systems and applications. They are also flexible and scalable. That means they can meet your evolving
-                  encryption and compliance needs.
-                </p>
+      <div class="hardware-wrapper">
+        <div class="hardware">
+          <div class="hardware-item row g-0 g-md-3 mb-5">
+            <div class="col-md-5 pe-lg-12">
+              <div class="hardware-desc card bg-dark h-100">
+                <div class="card-body">
+                  <h3 class="text-heading">
+                    HSM
+                  </h3>
+                  <p>
+                    Hardware security modules (HSMs) provide encryption processing and protection for the keys and
+                    applications that underlie your critical security processes. Thales HSMs are easy to integrate with
+                    your
+                    systems and applications. They are also flexible and scalable. That means they can meet your
+                    evolving
+                    encryption and compliance needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 ps-lg-12">
+              <div class="hardware-img bg-dark d-flex align-items-end h-100">
+                <img src="images/Shield-View 1@2x.png" alt="" class="img-fluid">
               </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="hardware-img bg-dark d-flex align-items-end h-100">
-              <img src="images/Shield-View 1@2x.png" alt="" class="img-fluid">
+          <div class="hardware-item row g-0 g-md-3 mb-5 flex-md-row-reverse">
+            <div class="col-md-5 ps-lg-12">
+              <div class="hardware-desc card bg-dark h-100">
+                <div class="card-body">
+                  <h3 class="text-heading">
+                    Smart POS<br> Terminals
+                  </h3>
+                  <p>
+                    Smart POS terminals allow you to process payments on the spot, only printing receipts when needed,
+                    and
+                    best of all, access to all the useful apps you need to help you accelerate your business.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="hardware-item row g-0 g-md-3 mb-5 flex-md-row-reverse">
-          <div class="col-md-5">
-            <div class="hardware-desc card bg-dark h-100">
-              <div class="card-body">
-                <h3 class="text-heading">
-                  Smart POS<br> Terminals
-                </h3>
-                <p>
-                  Smart POS terminals allow you to process payments on the spot, only printing receipts when needed, and
-                  best of all, access to all the useful apps you need to help you accelerate your business.
-                </p>
+            <div class="col-md-5 pe-lg-12">
+              <div class="hardware-img bg-dark d-flex align-items-end h-100">
+                <img src="images/Untitled-View 3@2x.png" alt="" class="img-fluid">
               </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="hardware-img bg-dark d-flex align-items-end h-100">
-              <img src="images/Untitled-View 3@2x.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="hardware-item row g-0 g-md-3 mb-5">
-          <div class="col-md-5">
-            <div class="hardware-desc card bg-dark h-100">
-              <div class="card-body">
-                <h3 class="text-heading">
-                  Credit Card Machines
-                </h3>
-                <p>
-                  A wide range of payment card machines including countertop, mobile, and portable solutions. Launched
-                  on Linux or traditional operational systems.
-                </p>
+          <div class="hardware-item row g-0 g-md-3 mb-5">
+            <div class="col-md-5 pe-lg-12">
+              <div class="hardware-desc card bg-dark h-100">
+                <div class="card-body">
+                  <h3 class="text-heading">
+                    Credit Card Machines
+                  </h3>
+                  <p>
+                    A wide range of payment card machines including countertop, mobile, and portable solutions. Launched
+                    on Linux or traditional operational systems.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-5">
-            <div class="hardware-img bg-dark d-flex align-items-end h-100">
-              <img src="images/Untitled-View 1@2x.png" alt="" class="img-fluid">
+            <div class="col-md-5 ps-lg-12">
+              <div class="hardware-img bg-dark d-flex align-items-end h-100">
+                <img src="images/Untitled-View 1@2x.png" alt="" class="img-fluid">
+              </div>
             </div>
           </div>
         </div>
@@ -305,7 +492,7 @@
     </div>
     </div>
   </section>
-  <section class="bg-light-1 page-section">
+  <section id="consulting" class="bg-light-1 page-section">
     <div class="container text-dark">
       <h2 class="text-heading">
         Consulting
@@ -340,12 +527,12 @@
       </div>
     </div>
   </section>
-  <section class="page-section text-dark container">
+  <section id="about-us" class="page-section text-dark container">
     <h2 class="text-heading offset-lg-1">
       About Us
     </h2>
     <div class="row g-0">
-      <div class="col-lg-3 offset-lg-1">
+      <div class="col-lg-3 offset-lg-1 mb-10 mb-lg-0">
         <p>
           Braemar was founded in 2018. Today, the main activity of Braemar is the development of software for managing
           the fleet of POS terminals and routing transactions.
@@ -388,7 +575,7 @@
     </div>
 
   </section>
-  <section class="container page-section bg-light text-dark">
+  <section id="contact" class="container page-section bg-light text-dark mb-10 mb-lg-20">
     <div class="row">
       <div class="col-lg-8 offset-lg-1">
         <h2 class="text-heading">
@@ -412,8 +599,7 @@
               <textarea class="form-control" rows="4" placeholder="Request"></textarea>
             </div>
             <div class="d-flex align-items-end justify-content-end">
-              <div>
-
+              <div class="w-100 text-end">
                 <input type="submit" class="btn btn-light w-100 w-lg-auto" value="Submit">
               </div>
             </div>
@@ -434,25 +620,25 @@
           <div class="row row-cols-md-2">
             <div>
 
-              <div class="nav flex-column">
-                <a href="" class="nav-link">Solution</a>
-                <a href="" class="nav-link">IaaS</a>
-                <a href="" class="nav-link">On Premise</a>
-                <a href="" class="nav-link">Hardware</a>
+              <div class="nav flex-column"><a class="nav-link" href="#solution">Solution</a>
+
+                <a class="nav-link" href="#iaas">IaaS</a> <a class="nav-link" href="#on-premise">On-Premise</a>
+
+                <a class="nav-link" href="#hardware">Hardware</a>
               </div>
             </div>
             <div>
               <div class="nav flex-column">
+                <a class="nav-link" href="#consulting">Consulting</a>
+                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link" href="#contact">Contact</a>
 
-                <a href="" class="nav-link">Consulting</a>
-                <a href="" class="nav-link">About Us</a>
-                <a href="" class="nav-link">Contact</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-lg-3 ms-auto d-flex">
-          <div class="fs-xs text-end py-4">
+        <div class="col-10 col-md-5 col-lg-3 ms-auto d-flex justify-content-between">
+          <div class="fs-lg-xs text-lg-end py-4">
             Braemar OÜ<br> Reg. No 14709357 <br>
             <br>
             Registered address: <br>
