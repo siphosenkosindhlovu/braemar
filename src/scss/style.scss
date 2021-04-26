@@ -1,7 +1,7 @@
 @import "./custom.scss";
 @import "./fonts.scss";
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 .text-heading {
   font-size: 30px;
@@ -87,6 +87,9 @@ textarea {
     position: absolute;
     background: #38f561;
     left: 0;
+    @include media-breakpoint-up(md) {
+      left: 38px;
+    }
   }
 
   @include media-breakpoint-up(lg) {
@@ -118,7 +121,8 @@ textarea {
 .lion {
   &-head {
     position: relative;
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -126,11 +130,11 @@ textarea {
     }
     &::before {
       content: "B";
-      right: calc(100% + 25px);
+      right: calc(100% + 5px);
     }
     &::after {
       content: "R";
-      left: calc(100% + 25px)
+      left: calc(100% + 5px);
     }
   }
 
@@ -140,7 +144,6 @@ textarea {
     width: 100%;
   }
 }
-
 
 footer {
   a.nav-link {
@@ -168,34 +171,38 @@ footer {
 
 .navbar-nav {
   margin: {
-    top: 140px;
-    bottom: 160px
-  };
+    top: 40px;
+    bottom: 160px;
+  }
 
   .nav-item {
     margin-bottom: 35px;
   }
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     margin: {
       top: 0 !important;
-      bottom: 0
-    };
+      bottom: 0;
+    }
     .nav-item {
       margin-bottom: 0;
     }
   }
 }
 .z-index {
-  z-index: 1000
+  z-index: 1000;
 }
 
-.page-top{
+.page-top {
   background-color: rgba(51, 67, 65, 0.527);
   backdrop-filter: blur(50px);
 }
 
 #hero {
   position: relative;
+  .container {
+    position: relative;
+    z-index: 10;
+  }
   .handle {
     position: absolute;
     bottom: -30px;
@@ -209,23 +216,59 @@ footer {
       background-color: white;
     }
   }
-}
-
-.functionality {
-  .media-thumb div {
-    text-align: center;
-  }
-  .media-thumb img {
-    text-align: center;
-    height: 40px;
-
-    @include media-breakpoint-up(xxxl){
-      height: 65px
+  overflow: hidden;
+  &::after {
+    content: " ";
+    display: block;
+    width: Max(100vh, 100vw);
+    height: Max(100vh, 100vw);
+    position: absolute;
+    background: #38f561;
+    opacity: 5%;
+    border-radius: 50%;
+    filter: blur(50px);
+    right: -97%;
+    bottom: -57%;
+    z-index: 0;
+    @include media-breakpoint-up(md) {
+      width: Min(100vh, 100vw);
+      height: Min(100vh, 100vw);
+      right: -12%;
+      top: -6%;
     }
   }
 }
-.hardware-wrapper{
 
+.functionality {
+  .media-thumb {
+    padding-right: 10px;
+    & div {
+      text-align: center;
+      @extend .ratio;
+      --bs-aspect-ratio: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      & img {
+        padding: 10px;
+        @include media-breakpoint-up(lg) {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .media-thumb img {
+    text-align: center;
+    //height: 40px;
+  }
+  @include media-breakpoint-up(xxxl) {
+    .media-thumb {
+      padding-right: 25px;
+    }
+  }
+}
+.hardware-wrapper {
   @extend .py-5;
   position: relative;
   &:before {
@@ -238,7 +281,7 @@ footer {
     left: 50%;
     top: -7.5px;
     transform: translateX(-50%);
-}
+  }
 }
 .hardware {
   &-img {
